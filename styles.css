@@ -1,0 +1,217 @@
+*:root {
+  --color-primary: #6ce5b1;
+  --color-secondary: #f3eeea;
+  --color-accent: #ed8299;
+  --color-highlight: #5e54c9;
+  --color-inverted: #031926;
+  --color-inverted-muted: #4d4d4d;
+  --color-neutral: #ffffff;
+  --color-neutral-muted: #fbf7f3;
+  --color-code-1: #5e54c9;
+  --color-code-2: #ef476f;
+  --color-code-3: #9f7aea;
+  --color-code-4: #e53e3e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header */
+.header {
+  background: var(--color-neutral);
+}
+
+.header-container {
+  margin: 4rem 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.header__sub-heading {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+
+.header__heading {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header__button {
+  background: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 10px 15px;
+  border-radius: 1rem;
+}
+
+/* projects slideshow in iphone frame */
+.projects-slideshow {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.iphone-frame-image {
+  min-width: 375px;
+  min-height: 700px;
+}
+
+/* bottom navbar for mobile layout */
+.mobile-navbar-container {
+  position: fixed;
+  bottom: 0;
+  right: 1rem;
+  left: 1rem;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-navbar {
+  background: var(--color-secondary);
+  margin: 1rem auto;
+  border-radius: 1rem;
+  max-width: 1000px;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.nav-item {
+  text-decoration: none;
+}
+
+.nav-item span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-inverted);
+}
+
+.nav-items {
+  margin: 0.25rem 0;
+}
+
+/* custom scroll bar */
+body::-webkit-scrollbar {
+  width: 4px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-neutral); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary); /* color of the scroll thumb */
+}
+
+/* main navbar for the page */
+.main-nav-header-title {
+  margin: 2rem 1rem;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main-nav-close-text {
+  margin-left: 1rem;
+}
+
+.main-nav-credential {
+  margin: 2rem 1rem;
+}
+
+.website-developer {
+  margin: 0 0 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  top: 6.5rem;
+}
+
+.main-navbar {
+  background: var(--color-secondary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 8rem;
+  border-radius: 1rem;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-nav-profile-pic {
+  border-radius: 50%;
+}
+
+.main-nav-ulist {
+  margin-left: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.main-nav-items-svg {
+  margin: 0 0.5rem;
+}
+
+.main-nav-item {
+  display: inline-block;
+  text-align: -webkit-match-parent;
+}
+
+.main-nav-items-a {
+  position: relative;
+  bottom: 0.35rem;
+  display: inline-block;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color-inverted);
+  padding: 0.75rem;
+  font-weight: 600;
+}
+
+.social-media {
+  margin: 2rem 0 2rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* transform property for main navbar */
+.open {
+  transform: translateX(0%);
+}
+
+.close {
+  transform: translateX(-100%);
+}
