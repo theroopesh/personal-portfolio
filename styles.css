@@ -66,11 +66,6 @@ body {
   text-align: center;
 }
 
-.iphone-frame-image {
-  min-width: 375px;
-  min-height: 700px;
-}
-
 /* bottom navbar for mobile layout */
 .mobile-navbar-container {
   position: fixed;
@@ -127,17 +122,22 @@ body::-webkit-scrollbar-thumb {
 /* main navbar for the page */
 .main-nav-header-title {
   margin: 2rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.close-menu-button {
   background-color: transparent;
   background-image: none;
   border: none;
   outline: none;
-  display: flex;
-  align-items: center;
   cursor: pointer;
 }
 
 .main-nav-close-text {
   margin-left: 1rem;
+  position: relative;
+  bottom: 0.125rem;
 }
 
 .main-nav-credential {
@@ -150,7 +150,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   display: inline-block;
   position: absolute;
-  top: 6.5rem;
+  top: 6rem;
 }
 
 .main-navbar {
@@ -159,8 +159,9 @@ body::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 8rem;
-  border-radius: 1rem;
+  right: 6rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
