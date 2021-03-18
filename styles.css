@@ -28,13 +28,29 @@ body {
     'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 /* header */
 .header {
   background: var(--color-neutral);
 }
 
 .header-container {
-  margin: 4rem 1rem;
+  margin: 4rem auto;
   text-align: center;
   padding: 1rem;
 }
@@ -42,11 +58,13 @@ body {
 .header__sub-heading {
   font-size: 1.25rem;
   margin: 1rem 0;
+  font-weight: 600;
 }
 
 .header__heading {
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .header__button {
@@ -62,8 +80,25 @@ body {
 
 /* projects slideshow in iphone frame */
 .projects-slideshow {
-  margin: 1rem auto;
   text-align: center;
+  margin-bottom: 4rem;
+}
+
+.projects-button {
+  margin: 2rem auto;
+}
+
+.other-projects-button {
+  color: var(--color-inverted);
+  margin: 1rem auto;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.right-arrow {
+  position: relative;
+  top: 0.15rem;
 }
 
 /* bottom navbar for mobile layout */
@@ -80,7 +115,7 @@ body {
   background: var(--color-secondary);
   margin: 1rem auto;
   border-radius: 1rem;
-  max-width: 1000px;
+  max-width: 600px;
 }
 
 .mobile-nav {
@@ -119,7 +154,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--color-primary); /* color of the scroll thumb */
 }
 
-/* main navbar for the page */
+/* main navbar of the page */
 .main-nav-header-title {
   margin: 2rem 1rem;
   display: flex;
@@ -129,15 +164,17 @@ body::-webkit-scrollbar-thumb {
 .close-menu-button {
   background-color: transparent;
   background-image: none;
+  margin-left: 1rem;
   border: none;
   outline: none;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .main-nav-close-text {
   margin-left: 1rem;
   position: relative;
-  bottom: 0.125rem;
+  bottom: 0.1rem;
 }
 
 .main-nav-credential {
@@ -215,4 +252,122 @@ body::-webkit-scrollbar-thumb {
 
 .close {
   transform: translateX(-100%);
+}
+
+/* services offered section */
+.services {
+  display: block;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.services-section-header {
+  text-align: center;
+}
+
+.services-section-header-title {
+  margin-bottom: 3rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+}
+
+.services-card-wrapper {
+  display: grid;
+  grid-row-gap: 4rem;
+  row-gap: 4rem;
+  grid-column-gap: 2rem;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.services-card-each {
+  display: flex;
+}
+
+.services-card-svg-wrapper {
+  display: block;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.services-card-svg-bg {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  place-items: center;
+  border-radius: 1.25rem;
+  background-color: var(--color-neutral-muted);
+  height: 4rem;
+  width: 4rem;
+}
+
+.services-card-text-wrapper {
+  display: block;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  text-align: left;
+}
+
+.services-card-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.services-card-text {
+  margin-bottom: 1rem;
+}
+
+/* footer */
+.footer {
+  height: 10rem;
+}
+
+/* responsive for desktop layouts */
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .services-section-header-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .services-card-wrapper {
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .services-card-wrapper {
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 6rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
