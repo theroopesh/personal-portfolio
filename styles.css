@@ -89,7 +89,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 
 .highlight {
@@ -146,12 +146,13 @@ p {
   left: 1rem;
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+  z-index: 1000;
 }
 
 .mobile-navbar {
   background: var(--color-secondary);
   margin: 1rem auto;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   max-width: 600px;
 }
 
@@ -161,17 +162,22 @@ p {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  padding: 0.5rem;
+  padding: 0.25rem;
 }
 
 .nav-item {
   text-decoration: none;
 }
 
+.nav-items:hover {
+  text-decoration: underline;
+}
+
 .nav-item span {
   display: block;
   font-size: 0.75rem;
   color: var(--color-inverted);
+  font-weight: 500;
 }
 
 .nav-items {
@@ -193,7 +199,7 @@ body::-webkit-scrollbar-thumb {
 
 /* main navbar of the page for mobile layouts */
 .main-nav-header-title {
-  margin: 2rem 1rem;
+  margin: 1.5rem 1rem;
   display: flex;
   align-items: center;
 }
@@ -216,7 +222,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main-nav-credential {
-  margin: 2rem 1rem;
+  margin: 0.5rem 0.5rem 1rem 1rem;
 }
 
 .website-developer {
@@ -239,6 +245,12 @@ body::-webkit-scrollbar-thumb {
   border-bottom-right-radius: 1rem;
   -webkit-transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
+  max-width: 350px;
+}
+
+.main-nav {
+  max-width: 300px;
+  margin: auto;
 }
 
 .main-nav-profile-pic {
@@ -247,7 +259,7 @@ body::-webkit-scrollbar-thumb {
 
 .main-nav-ulist {
   margin-left: 1rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -367,6 +379,70 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
+/* dev intro */
+.dev-intro-wrap {
+  max-width: 64rem;
+  margin: 2rem auto;
+}
+
+.dev-intro-content {
+  display: flex;
+  align-items: center;
+  flex: 1 1;
+  flex-wrap: wrap;
+  border-radius: 1.25rem;
+  background-color: var(--color-secondary);
+}
+
+.dev-intro-img-wrap {
+  max-width: 22rem;
+}
+
+.dev-img {
+  height: auto;
+  border-radius: 1.25rem;
+}
+
+.dev-intro-des-wrap {
+  padding: 1.5rem 1rem;
+}
+
+.dev-intro-des {
+  position: relative;
+  top: -4rem;
+  z-index: 10;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: -0.5rem;
+  border-radius: 1.25rem;
+  background-color: var(--color-neutral);
+}
+
+.dev-intro-name {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.dev-intro-des-text-wrap {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.bookacall-button {
+  background-color: var(--color-primary);
+  color: var(--color-inverted);
+  border-radius: 0.75rem;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
 /* footer */
 .footer {
   height: 10rem;
@@ -403,6 +479,67 @@ body::-webkit-scrollbar-thumb {
   .services-card-wrapper {
     justify-content: center;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* dev intro */
+  .dev-intro-wrap {
+    max-width: 64rem;
+    margin: 2rem auto;
+  }
+
+  .dev-intro-content {
+    flex-wrap: wrap;
+    border-radius: 1.25rem;
+    background-color: var(--color-secondary);
+  }
+
+  .dev-intro-img-wrap {
+    max-width: 22rem;
+  }
+
+  .dev-img {
+    height: auto;
+    border-radius: 1.25rem;
+  }
+
+  .dev-intro-des-wrap {
+    padding: 1.5rem 1rem;
+  }
+
+  .dev-intro-des {
+    position: relative;
+    top: -4rem;
+    z-index: 10;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: -0.5rem;
+    border-radius: 1.25rem;
+    background-color: var(--color-neutral);
+  }
+
+  .dev-intro-name {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .dev-intro-des-text-wrap {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  .bookacall-button {
+    background-color: var(--color-primary);
+    color: var(--color-inverted);
+    border-radius: 0.75rem;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
   }
 }
 
