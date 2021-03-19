@@ -7,16 +7,6 @@ const closeMenuButton = document.querySelector('[data-close-menu-button]');
 const mobileNavbar = document.querySelector('.mobile-navbar-container');
 
 // Event listeners
-header.addEventListener('click', (e) => {
-  closeMainNavbar();
-  closeMobileNavbar();
-});
-
-projectsSlideshow.addEventListener('click', (e) => {
-  closeMainNavbar();
-  closeMobileNavbar();
-});
-
 openMenuButton.addEventListener('click', () => {
   showMainNavbar();
   showMobileNavbar();
