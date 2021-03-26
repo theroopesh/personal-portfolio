@@ -43,37 +43,6 @@
       </div>
     </header>
     <main>
-      <div class="mobile-navbar-container">
-        <div class="mobile-navbar">
-          <nav class="mobile-nav">
-            <a class="nav-item" href="#"
-              ><img class="nav-items" src="svg/home.svg" height="20" width="20" /><span
-                class="nav-items"
-                >Home</span
-              ></a
-            >
-            <a class="nav-item" href="#"
-              ><img class="nav-items" src="svg/man.svg" height="20" width="20" /><span
-                class="nav-items"
-                >About</span
-              ></a
-            >
-            <a class="nav-item" href="#"
-              ><img class="nav-items" src="svg/projects.svg" height="20" width="20" /><span
-                class="nav-items"
-                >Projects</span
-              ></a
-            >
-            <a data-menu-button class="nav-item menu-button" href="#"
-              ><img class="nav-items" src="svg/menu.svg" height="20" width="20" /><span
-                class="nav-items"
-                >Menu</span
-              ></a
-            >
-          </nav>
-        </div>
-      </div>
-
       <section class="section-1 intro container">
         <div class="intro-container">
           <p class="intro-sub-heading">I'm a Front End Developer</p>
@@ -320,87 +289,26 @@
           </div>
         </div>
       </section>
-
-      <div class="main-navbar close">
-        <nav class="main-nav">
-          <div class="main-nav-header">
-            <div class="main-nav-header-title">
-              <button data-close-menu-button class="close-menu-button">
-                <img class="main-nav-close-svg" src="svg/close.svg" height="15" width="15" />
-                <span class="main-nav-close-text">Close Menu</span>
-              </button>
-            </div>
-            <div class="main-nav-credential">
-              <img
-                class="main-nav-profile-pic"
-                src="img/profile-pic.jpg"
-                height="50px"
-                width="50px"
-                alt="profile pic"
-              />
-              <div class="website-developer">Roopesh Saravanan</div>
-            </div>
-          </div>
-
-          <ul class="main-nav-ulist">
-            <li class="main-nav-list-item">
-              <span class="main-nav-item">
-                <img class="main-nav-items-svg" src="svg/home.svg" height="20" width="20" />
-                <a href="#" class="main-nav-items-a">Home</a>
-              </span>
-            </li>
-            <li class="main-nav-list-item">
-              <span class="main-nav-item">
-                <img class="main-nav-items-svg" src="svg/man.svg" height="20" width="20" />
-                <a href="#" class="main-nav-items-a">About</a>
-              </span>
-            </li>
-            <li class="main-nav-list-item">
-              <span class="main-nav-item">
-                <img class="main-nav-items-svg" src="svg/projects.svg" height="20" width="20" />
-                <a href="#" class="main-nav-items-a">Projects</a>
-              </span>
-            </li>
-            <li class="main-nav-list-item">
-              <span class="main-nav-item">
-                <img class="main-nav-items-svg" src="svg/services.svg" height="20" width="20" />
-                <a href="#" class="main-nav-items-a">Services</a>
-              </span>
-            </li>
-            <li class="main-nav-list-item">
-              <span class="main-nav-item">
-                <img class="main-nav-items-svg" src="svg/blog.svg" height="20" width="20" />
-                <a href="#" class="main-nav-items-a">Blog</a>
-              </span>
-            </li>
-            <li class="main-nav-list-item">
-              <span class="main-nav-item">
-                <img class="main-nav-items-svg" src="svg/hire.svg" height="20" width="20" />
-                <a href="#" class="main-nav-items-a">Hire me today</a>
-              </span>
-            </li>
-          </ul>
-
-          <div class="social-media">
-            <a href="https://twitter.com/roopeshofficial" target="_blank" title="Twitter">
-              <img src="svg/twitter.svg" height="25" width="25" alt="twitter" />
-            </a>
-            <a href="https://linkedin.com/in/theroopesh" target="_blank" title="LinkedIn">
-              <img src="svg/linkedin.svg" height="25" width="25" alt="linkedin" />
-            </a>
-            <a href="https://instagram.com/roopeshofficial" target="_blank" title="Instagram">
-              <img src="svg/instagram-logo.svg" height="25" width="25" alt="instagram" />
-            </a>
-            <a href="https://instagram.com/roopeshofficial" target="_blank" title="Dribble">
-              <img src="svg/dribble.svg" height="25" width="25" alt="dribble" />
-            </a>
-            <a href="https://github.com/theroopesh" target="_blank" title="GitHub">
-              <img src="svg/github.svg" height="25" width="25" alt="github" />
-            </a>
-          </div>
-        </nav>
-      </div>
     </main>
+    <div class="mobile-menu-container">
+      <nav class="mobile-menu">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Hire me</a></li>
+        </ul>
+        <button class="menu-button-black">
+          <span class="line line-top"></span><span class="line line-bottom"></span>
+        </button>
+      </nav>
+      <div class="circle"></div>
+    </div>
     <footer class="footer"></footer>
   </body>
 </html>
