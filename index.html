@@ -4,7 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roopesh Saravanan - Frondend Developer</title>
+    <link rel="stylesheet" href="flickity.min.css" media="screen" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="flickity.min.js"></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -56,8 +58,8 @@
           <div class="projects-header">
             <h1 class="projects-title">What I have done so far?</h1>
           </div>
-          <div class="projects-wrapper container">
-            <div class="project">
+          <div class="main-carousel" data-flickity='{ "freeScroll": true, "autoPlay": true }'>
+            <div class="carousel-cell">
               <div class="project-container">
                 <div class="project-wrapper project-1">
                   <div class="project-img-container">
@@ -88,11 +90,42 @@
                 </div>
               </div>
             </div>
-            <div class="project">
+            <div class="carousel-cell">
+              <div class="project-container">
+                <div class="project-wrapper project-1">
+                  <div class="project-img-container">
+                    <div class="project-img-wrapper project-img-1">
+                      <img
+                        class="project-img responsive"
+                        src="img/to-do-list-1-rs.png"
+                        height="300"
+                        width="300"
+                        alt="todo-list-banner"
+                      />
+                    </div>
+                  </div>
+                  <div class="project-des-container">
+                    <div class="project-des-wrapper">
+                      <p class="project-des-title">Your Todo list</p>
+                      <p class="project-des-text">
+                        A Todo list application where you can save all you todos.
+                      </p>
+                      <a
+                        class="btn btn-project"
+                        target="_blank"
+                        href="https://github.com/theroopesh/your-todo-list"
+                        >View on GitHub</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
               <div class="project-container">
                 <div class="project-wrapper project-2">
                   <div class="project-img-container flex-order">
-                    <div class="project-img-wrapper">
+                    <div class="project-img-wrapper project-img-2">
                       <img
                         class="project-img responsive"
                         src="img/shoppingcart-img.jpg"

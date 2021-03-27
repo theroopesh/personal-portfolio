@@ -16,6 +16,7 @@
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -239,6 +240,10 @@ nav.mobile-menu .menu-button-black {
   text-align: center;
 }
 
+.main-carousel {
+  margin-bottom: 4rem;
+}
+
 .projects-header {
   text-align: center;
 }
@@ -250,34 +255,15 @@ nav.mobile-menu .menu-button-black {
   line-height: 2.25rem;
 }
 
-.projects-wrapper {
-  display: grid;
-  padding: 0 2rem;
-  grid-template-columns: repeat(10, 75vw);
-  grid-template-rows: 1fr;
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-  overflow: hidden;
-  scroll-snap-type: both mandatory;
-  scroll-padding: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 64rem;
-}
-
-.active {
-  scroll-snap-type: unset;
-}
-
-.project {
-  scroll-snap-align: center;
-  display: inline-block;
+.carousel-cell {
+  counter-increment: gallery-cell;
   border-radius: 1.25rem;
+  margin-right: 10px;
+  min-width: 300px;
 }
 
 .project-container {
   max-width: 64rem;
-  margin: 0;
 }
 
 .project-wrapper {
@@ -287,12 +273,7 @@ nav.mobile-menu .menu-button-black {
   flex: 1 1;
   border-radius: 1.25rem;
   flex-wrap: wrap;
-  margin: auto;
   min-height: 475px;
-}
-
-.project-img-1 {
-  max-width: 12rem;
 }
 
 .project-1 {
@@ -312,8 +293,8 @@ nav.mobile-menu .menu-button-black {
 }
 
 .project-des-container {
-  max-width: 32rem;
   margin: 1rem;
+  max-width: 32rem;
 }
 
 .project-des-wrapper {
@@ -582,14 +563,8 @@ nav.mobile-menu .menu-button-black {
 
   /* projects section */
 
-  .projects-wrapper {
-    padding: 0 4rem;
-    grid-column-gap: 0;
-    margin-bottom: 2rem;
-  }
-
-  .project {
-    margin: 0;
+  .carousel-cell {
+    min-width: 64rem;
   }
 
   .project-des-wrapper {
