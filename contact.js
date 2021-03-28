@@ -11,5 +11,5 @@ profileImg.addEventListener('click', redirectToHome);
 navName.addEventListener('click', redirectToHome);
 
 function redirectToHome() {
-  location.href = '/index.html';
+  location.href = '/personal-portfolio';
 }
