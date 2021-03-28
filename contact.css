@@ -168,21 +168,14 @@ nav.mobile-menu .menu-button-black {
   background: var(--color-neutral);
 }
 
-.intro-container {
+.contact-container {
   margin: 5rem auto;
   text-align: center;
   padding: 1rem 0.5rem;
+  max-width: 75%;
 }
 
-.intro-sub-heading {
-  font-size: 1.5rem;
-  margin: 1.5rem 0;
-  font-weight: 600;
-  max-width: 65ch;
-  line-height: 2rem;
-}
-
-.intro-heading {
+.contact-title {
   font-size: 2.25rem;
   line-height: 2.5rem;
   margin-top: 0;
@@ -190,11 +183,8 @@ nav.mobile-menu .menu-button-black {
   font-weight: 600;
 }
 
-.btn-primary {
-  background: var(--color-primary);
-  color: var(--color-inverted);
-  border-radius: 0.75rem;
-  padding: 0.75rem 2rem;
+.contact-content {
+  text-align: center;
 }
 
 /* black lives matter banner */
@@ -235,286 +225,115 @@ nav.mobile-menu .menu-button-black {
   display: none;
 }
 
-/* projects slideshow using flickity */
-.projects-container {
-  text-align: center;
+/* contact form */
+.section-2 {
+  background-color: var(--color-secondary);
 }
 
-.main-carousel {
-  margin-bottom: 4rem;
-}
-
-.projects-header {
-  text-align: center;
-}
-
-.projects-title {
-  margin-bottom: 2rem;
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 2.25rem;
-}
-
-.carousel-cell {
-  counter-increment: gallery-cell;
-  border-radius: 1.25rem;
-  margin-right: 10px;
-  min-width: 300px;
-}
-
-.project-container {
-  max-width: 64rem;
-}
-
-.project-wrapper {
+form {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex: 1 1;
-  border-radius: 1.25rem;
-  flex-wrap: wrap;
-  min-height: 475px;
+  padding: 2.5rem 0;
 }
 
-.project-1 {
-  background-color: #dd62ff;
+.tab {
+  width: 350px;
+  border-radius: 0.5rem;
+  background: var(--color-neutral);
+  padding: 20px 20px;
+  margin: 1rem 1rem 10px 1rem;
 }
 
-.project-2 {
-  background-color: #f1c63c;
+.form-elements {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
-.project-img-wrapper {
-  max-width: 32rem;
-}
-
-.project-img {
-  border-radius: 1.25rem;
-}
-
-.project-des-container {
-  margin: 1rem;
-  max-width: 32rem;
-}
-
-.project-des-wrapper {
-  background-color: var(--color-neutral);
-  border-radius: 1.25rem;
-  padding: 1rem;
-}
-
-.project-des-title {
-  font-size: 1.875rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.project-des-text {
-  color: var(--color-inverted-muted);
-}
-
-.btn-project {
-  background-color: black;
-  color: white;
-  border-radius: 0.75rem;
-  padding: 0.75rem 2rem;
-}
-
-.github-svg {
-  margin: 0 0.5rem;
-}
-
-.projects-button {
-  margin: 1rem auto;
-}
-
-.other-projects-button {
-  color: var(--color-inverted);
-  margin: 1rem auto;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.right-arrow {
-  position: relative;
-  top: 0.15rem;
-}
-
-/* services offered section */
-.services {
-  display: block;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.services-section-header {
-  text-align: center;
-}
-
-.services-section-header-title {
-  margin-bottom: 3rem;
-  font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 2.25rem;
-}
-
-.services-card-wrapper {
-  display: grid;
-  grid-row-gap: 4rem;
-  row-gap: 4rem;
-  grid-column-gap: 2rem;
-  column-gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.services-card-each {
-  display: flex;
-}
-
-.services-card-svg-wrapper {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
-.services-card-svg-bg {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  place-items: center;
-  border-radius: 1.25rem;
-  background-color: var(--color-neutral-muted);
-  height: 4rem;
-  width: 4rem;
-}
-
-.services-card-text-wrapper {
-  display: block;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  text-align: left;
-}
-
-.services-card-title {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 600;
-  letter-spacing: -0.025em;
-}
-
-.services-card-text {
-  margin-bottom: 1rem;
-}
-
-.findout-more-button {
+.form-elements label {
+  margin-bottom: 0.5rem;
   display: inline-block;
-  margin: 0.5rem 0;
-  text-decoration: none;
-  font-weight: 600;
+  color: var(--color-inverted-muted);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-elements input {
+  display: block;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 2px solid gray;
+  width: 100%;
+  padding: 6px;
+}
+
+.form-elements input:focus {
+  border-color: #777;
+}
+
+.form-elements small {
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.form-elements.error small {
+  visibility: visible;
+}
+
+.form-elements.error input {
+  border-color: #e74c3c;
+}
+
+.form-elements.success input {
+  border-color: var(--color-primary); /*border-color: #2ecc71;*/
+}
+
+.btn-submit {
+  border-radius: 100vw;
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
   color: var(--color-inverted);
-  cursor: pointer;
-}
-
-/* dev intro */
-.dev-intro-wrap {
-  max-width: 64rem;
-  margin: 2rem auto;
-}
-
-.dev-intro-content {
-  display: flex;
-  align-items: center;
-  flex: 1 1;
-  flex-wrap: wrap;
-  border-radius: 1.25rem;
-  background-color: var(--color-secondary);
-  margin: auto;
-}
-
-.dev-intro-img-wrap {
-  max-width: 22rem;
-}
-
-.dev-img {
-  border-top-left-radius: 1.25rem;
-  border-top-right-radius: 1.25rem;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.dev-intro-des-wrap {
-  padding: 1.5rem 1rem;
-}
-
-.dev-intro-des {
-  z-index: 10;
-  position: relative;
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: -5rem;
-  border-radius: 1.25rem;
-  background-color: var(--color-neutral);
-}
-
-.dev-intro-name {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  display: block;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
   font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  outline: none;
 }
 
-.dev-intro-des-text-wrap {
-  margin-bottom: 1rem;
+/* .btn-submit:hover {
+  opacity: 0.7;
+} */
+
+/* .btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-inverted);
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.025em;
 }
 
-.btn-inverted {
+.btn-submit {
   background-color: var(--color-inverted);
   color: var(--color-neutral);
   border-radius: 0.75rem;
   padding: 0.75rem 2rem;
-}
+} */
 
-/* know more section */
-.know-more-cont {
-  max-width: 64rem;
-  margin: 4rem auto;
-}
-
-.know-more-wrap {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  border-radius: 1.25rem;
-  background-color: var(--color-primary);
-}
-
-.know-more-img-cont {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 22rem;
-}
-
-.know-more-img {
-  display: block;
-  border-radius: 1.25rem;
-  margin-top: 1.5rem;
-}
-
-.know-more-des-cont {
-  padding: 1rem 2rem;
-  max-width: 42rem;
+.form-elements .small {
+  color: var(--color-inverted-muted);
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
 }
 
-.know-more-title {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  margin-top: 0;
+.form-elements p {
+  text-align: center;
 }
 
 /* footer */
@@ -597,8 +416,6 @@ nav.mobile-menu .menu-button-black {
   margin-bottom: 1rem;
 }
 
-/* responsive for desktop layouts */
-
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
@@ -608,21 +425,9 @@ nav.mobile-menu .menu-button-black {
     font-size: 1rem;
   }
 
-  .intro-heading {
+  .contact-title {
     font-size: 4.25rem;
     line-height: 1;
-  }
-
-  .services-section-header-title {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    margin-bottom: 5rem;
-  }
-
-  .projects-title {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    margin-bottom: 3rem;
   }
 }
 
@@ -631,145 +436,15 @@ nav.mobile-menu .menu-button-black {
     max-width: 768px;
   }
 
-  .intro-heading {
+  .contact-title {
     font-size: 4.25rem;
     margin-bottom: 2.5rem;
-  }
-
-  .services-card-wrapper {
-    justify-content: center;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  /* projects section */
-
-  .carousel-cell {
-    min-width: 42rem;
-  }
-
-  .project-des-wrapper {
-    text-align: left;
-  }
-
-  .project-wrapper {
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 275px;
-  }
-
-  .project-des-title {
-    font-size: 2.5rem;
-  }
-
-  .project-des-wrapper {
-    padding: 2rem;
-  }
-
-  .flex-order {
-    order: 10000;
-  }
-
-  /* dev intro */
-  .dev-intro-wrap {
-    max-width: 64rem;
-    margin: 2rem auto;
-  }
-
-  .dev-img {
-    border-radius: 1.25rem;
-  }
-
-  .dev-intro-content {
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .dev-intro-des {
-    position: static;
-    padding: 2rem;
-    margin-top: 0;
-    text-align: left;
-    max-width: 22rem;
-  }
-
-  .dev-intro-name {
-    font-size: 3rem;
-    line-height: 3rem;
-    margin-bottom: 1.5rem;
-  }
-
-  /* know more section */
-  .know-more-cont {
-    max-width: 64rem;
-    margin: 4rem auto;
-  }
-
-  .know-more-wrap {
-    flex: 1 1;
-    flex-wrap: nowrap;
-  }
-
-  .know-more-img-cont {
-    order: 9999;
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .know-more-img-wrap {
-    margin: 0;
-  }
-
-  .know-more-img {
-    max-width: 32rem;
-    border-radius: 1.25rem;
-    margin-top: 0;
-  }
-
-  .know-more-des-cont {
-    padding: 3rem 1.5rem;
-    text-align: left;
-    max-width: 28rem;
-  }
-
-  .know-more-title {
-    font-size: 3rem;
-    line-height: 3rem;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-  }
-
-  .carousel-cell {
-    min-width: 42rem;
-  }
-
-  .intro-container {
-    width: 75%;
-  }
-
-  .services-card-wrapper {
-    justify-content: center;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .dev-intro-des {
-    max-width: 42rem;
-  }
-
-  .know-more-img-cont {
-    margin-right: 0;
-    margin-left: 0;
-    align-self: center;
-  }
-
-  .know-more-des-cont {
-    padding: 3rem;
-    max-width: 42rem;
   }
 }
 
@@ -778,24 +453,12 @@ nav.mobile-menu .menu-button-black {
     max-width: 1280px;
   }
 
-  .carousel-cell {
-    min-width: 64rem;
-  }
-
-  .intro-container {
-    margin: 10rem auto;
-  }
-
   .mobile-menu-container {
     display: none;
   }
 
   .btn-secondary {
     background-color: var(--color-neutral-muted);
-  }
-
-  .services {
-    margin-bottom: 5rem;
   }
 
   /* desktop navbar */
