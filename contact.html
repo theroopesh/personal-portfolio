@@ -54,31 +54,30 @@
           I’m able to create a website which perfectly suits your needs, ensuring that it will
           engage your customers while making your job easier.
         </p>
+        <p>Just fill this form, and we'll set up a meeting to help you improve your business</p>
       </div>
     </section>
     <section class="section-2">
-      <form id="form">
-        <div class="tab" id="tab-one">
-          <div class="form-elements">
-            <label for="name">Name</label>
-            <input type="name" id="name" name="name" />
-            <small>Error Message</small>
-          </div>
-
-          <div class="form-elements">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" />
-            <small>Error Message</small>
-          </div>
-
-          <div class="form-elements">
-            <label for="mobile">Phone number</label>
-            <input type="mobile" id="mobile" name="mobile" />
-            <small>Error Message</small>
-          </div>
-          <button class="btn btn-submit" type="submit">Submit</button>
-        </div>
-      </form>
+      <div class="contact-form">
+        <form
+          id="form"
+          method="POST"
+          action="https://formsubmit.co/helloiamroopesh@gmail.com"
+          enctype="multipart/form-data"
+        >
+          <input type="text" id="name" name="name" placeholder="Name" required />
+          <input type="email" id="email" name="email" placeholder="Email" required />
+          <input type="text" id="subject" name="subject" placeholder="Subject" required />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            required
+            spellcheck="false"
+          ></textarea>
+          <button class="btn btn-submit" type="submit">Send</button>
+        </form>
+      </div>
     </section>
     <div class="mobile-menu-container">
       <nav class="mobile-menu">
