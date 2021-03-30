@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nobile:wght@700&display=swap');
+
 *:root {
   --color-primary: #6ce5b1;
   --color-secondary: #f3eeea;
@@ -168,30 +170,53 @@ nav.mobile-menu .menu-button-black {
   background: var(--color-neutral);
 }
 
+.intro {
+  background-color: var(--color-secondary);
+}
+
+.mac-img-wrapper {
+  display: none;
+}
+
 .intro-container {
-  margin: 5rem auto;
+  display: block;
   text-align: center;
-  padding: 1rem 0.5rem;
 }
 
-.intro-sub-heading {
+.intro-text {
+  padding: 5rem 0;
+}
+
+.intro-text h1 {
+  margin: 0;
+  font-size: 1.875rem;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+  transform: rotate(-5deg);
+  transform-origin: bottom left;
+}
+
+.intro-text h3 {
   font-size: 1.5rem;
-  margin: 1.5rem 0;
-  font-weight: 600;
-  max-width: 65ch;
-  line-height: 2rem;
+  font-weight: 900;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-.intro-heading {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.intro-text p {
+  font-size: 1.5rem;
   margin-top: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.25rem;
+  line-height: 2rem;
   font-weight: 600;
+  width: 100%;
+  text-align: center;
 }
 
 .btn-primary {
-  background: var(--color-primary);
+  /* background: #af91db; */
+  background-color: var(--color-primary);
   color: var(--color-inverted);
   border-radius: 0.75rem;
   padding: 0.75rem 2rem;
@@ -523,7 +548,7 @@ nav.mobile-menu .menu-button-black {
 }
 
 .footer-container {
-  padding-top: 8rem;
+  padding-top: 2rem;
 }
 
 .footer-img-content {
@@ -597,6 +622,13 @@ nav.mobile-menu .menu-button-black {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 320px) {
+  .intro-text p {
+    font-size: 1.875rem;
+    line-height: 2rem;
+  }
+}
+
 /* responsive for desktop layouts */
 
 @media (min-width: 640px) {
@@ -604,13 +636,14 @@ nav.mobile-menu .menu-button-black {
     max-width: 640px;
   }
 
-  .banner-text {
-    font-size: 1rem;
+  .intro-text p {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 1.5rem;
   }
 
-  .intro-heading {
-    font-size: 4.25rem;
-    line-height: 1;
+  .banner-text {
+    font-size: 1rem;
   }
 
   .services-section-header-title {
@@ -629,11 +662,6 @@ nav.mobile-menu .menu-button-black {
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
-  }
-
-  .intro-heading {
-    font-size: 4.25rem;
-    margin-bottom: 2.5rem;
   }
 
   .services-card-wrapper {
@@ -744,12 +772,52 @@ nav.mobile-menu .menu-button-black {
     max-width: 1024px;
   }
 
-  .carousel-cell {
-    min-width: 42rem;
+  .intro {
+    background-color: var(--color-primary);
+    background-image: -webkit-linear-gradient(-180deg, var(--color-primary) 65%, #fffae5 35%);
   }
 
   .intro-container {
-    width: 75%;
+    display: flex;
+    text-align: center;
+  }
+
+  .mac-img-wrapper {
+    display: block;
+    margin-top: -5rem;
+  }
+
+  .mac-svg {
+    display: block;
+    height: 100vh;
+  }
+
+  .intro-text {
+    margin-top: 10%;
+  }
+
+  .intro-text h1 {
+    font-size: 2.25rem;
+    transform: rotate(-5deg);
+  }
+
+  .intro-text h3 {
+    font-size: 2rem;
+  }
+
+  .intro-text p {
+    font-size: 2.75rem;
+    line-height: 3.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .btn-primary {
+    background-color: #af91db;
+    color: var(--color-neutral);
+  }
+
+  .carousel-cell {
+    min-width: 42rem;
   }
 
   .services-card-wrapper {
@@ -782,16 +850,12 @@ nav.mobile-menu .menu-button-black {
     min-width: 64rem;
   }
 
-  .intro-container {
-    margin: 10rem auto;
-  }
-
   .mobile-menu-container {
     display: none;
   }
 
   .btn-secondary {
-    background-color: var(--color-neutral-muted);
+    background-color: var(--color-secondary);
   }
 
   .services {
@@ -801,30 +865,22 @@ nav.mobile-menu .menu-button-black {
   /* desktop navbar */
   .desktop-navbar {
     display: block;
+    background-color: var(--color-primary);
+    background-image: -webkit-linear-gradient(-180deg, var(--color-primary) 65%, #fffae5 35%);
   }
 
   .desktop-nav {
     display: flex;
     justify-content: space-between;
-    margin: 0.5rem;
-  }
-
-  .desktop-credential {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .desktop-credential-profile-pic {
-    border-radius: 50%;
-    cursor: pointer;
   }
 
   .desktop-credential-text {
     font-weight: 600;
-    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
     position: relative;
-    bottom: 1rem;
-    margin-left: 0.5rem;
+    top: 0.5rem;
+    display: inline-block;
     cursor: pointer;
   }
 
