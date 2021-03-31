@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nobile:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond:wght@400;500&family=Nobile:wght@400;500;700&display=swap');
 
 *:root {
   --color-primary: #6ce5b1;
@@ -206,7 +206,7 @@ nav.mobile-menu .menu-button-black {
 
 .intro-text p {
   font-size: 1.5rem;
-  margin-top: 0;
+  margin-top: 1rem;
   margin-bottom: 1.25rem;
   line-height: 2rem;
   font-weight: 600;
@@ -261,16 +261,25 @@ nav.mobile-menu .menu-button-black {
 }
 
 /* projects slideshow using flickity */
+.projects-dt {
+  display: none;
+}
+
 .projects-container {
   text-align: center;
+  margin: 5rem auto 0 auto;
 }
 
 .main-carousel {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 4rem;
+  max-height: 500px;
+  max-width: 375px;
 }
 
 .projects-header {
-  text-align: center;
+  margin: 3rem auto;
 }
 
 .projects-title {
@@ -281,24 +290,22 @@ nav.mobile-menu .menu-button-black {
 }
 
 .carousel-cell {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
   counter-increment: gallery-cell;
   border-radius: 1.25rem;
-  margin-right: 10px;
-  min-width: 300px;
+  min-height: 400px;
+  min-width: 275px;
 }
 
-.project-container {
-  max-width: 64rem;
-}
-
-.project-wrapper {
+.cell-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1 1;
-  border-radius: 1.25rem;
   flex-wrap: wrap;
-  min-height: 475px;
+  border-radius: 1.25rem;
+  min-height: 400px;
 }
 
 .project-1 {
@@ -309,17 +316,12 @@ nav.mobile-menu .menu-button-black {
   background-color: #f1c63c;
 }
 
-.project-img-wrapper {
-  max-width: 32rem;
-}
-
 .project-img {
   border-radius: 1.25rem;
 }
 
 .project-des-container {
   margin: 1rem;
-  max-width: 32rem;
 }
 
 .project-des-wrapper {
@@ -371,7 +373,7 @@ nav.mobile-menu .menu-button-black {
 /* services offered section */
 .services {
   display: block;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
 }
 
@@ -567,6 +569,10 @@ nav.mobile-menu .menu-button-black {
   gap: 0.5rem;
 }
 
+.footer-text-content p {
+  margin: 0;
+}
+
 .footer-text-wrapper {
   display: grid;
   grid-gap: 0.5rem;
@@ -578,7 +584,7 @@ nav.mobile-menu .menu-button-black {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
-  margin: 0.5rem 0;
+  margin: 0;
 }
 
 .footer-text-content {
@@ -594,8 +600,8 @@ nav.mobile-menu .menu-button-black {
 }
 
 .social-media-container {
-  margin-left: -1rem;
-  margin-right: -1rem;
+  margin: 1rem -1rem;
+  text-align: center;
 }
 
 .social-media-wrapper {
@@ -612,7 +618,7 @@ nav.mobile-menu .menu-button-black {
 .copyright {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-top: 4rem;
+  margin-top: 2rem;
   border-top: var(--color-secondary) solid 2px;
 }
 
@@ -669,29 +675,72 @@ nav.mobile-menu .menu-button-black {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  /* projects section */
-
-  .carousel-cell {
-    min-width: 42rem;
+  /* projects slideshow using flickity */
+  .projects {
+    display: none;
   }
 
-  .project-des-wrapper {
-    text-align: left;
+  .projects-dt {
+    display: block;
   }
 
-  .project-wrapper {
-    flex-wrap: nowrap;
+  .projects-ct-dt {
+    text-align: center;
+  }
+
+  .projects-header h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .projects-carousel-dt {
+    margin: 4rem auto;
+  }
+
+  .project-cell-dt {
+    max-width: 64rem;
+    margin: 4rem auto;
+  }
+
+  .project-img-cr-dt {
+    max-width: 22rem;
+  }
+
+  .project-img-dt {
+    max-width: 22rem;
+    border-radius: 1.25rem;
+  }
+
+  .project-cell-wp-dt {
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 275px;
+    flex: 1 1;
+    gap: 3rem;
+    border-radius: 1.25rem;
+    padding: 1rem;
   }
 
-  .project-des-title {
-    font-size: 2.5rem;
+  .project-des-container {
+    margin: 1rem;
   }
 
-  .project-des-wrapper {
+  .project-des-wp-dt {
+    background-color: var(--color-neutral);
+    border-radius: 1.25rem;
+    text-align: left;
     padding: 2rem;
+  }
+
+  .project-des-wp-dt h2 {
+    font-size: 1.875rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .project-des-wp-dt p {
+    min-width: 20rem;
+    max-width: 20rem;
   }
 
   .flex-order {
@@ -774,12 +823,17 @@ nav.mobile-menu .menu-button-black {
 
   .intro {
     background-color: var(--color-primary);
-    background-image: -webkit-linear-gradient(-180deg, var(--color-primary) 65%, #fffae5 35%);
+    background-image: -webkit-linear-gradient(
+      -180deg,
+      var(--color-secondary) 65%,
+      var(--color-primary) 35%
+    );
   }
 
   .intro-container {
     display: flex;
     text-align: center;
+    gap: 5rem;
   }
 
   .mac-img-wrapper {
@@ -793,7 +847,7 @@ nav.mobile-menu .menu-button-black {
   }
 
   .intro-text {
-    margin-top: 10%;
+    margin-top: 7.5%;
   }
 
   .intro-text h1 {
@@ -808,16 +862,17 @@ nav.mobile-menu .menu-button-black {
   .intro-text p {
     font-size: 2.75rem;
     line-height: 3.25rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.25rem;
   }
 
-  .btn-primary {
-    background-color: #af91db;
-    color: var(--color-neutral);
+  .project-cell-wp-dt {
+    gap: 6rem;
   }
 
-  .carousel-cell {
-    min-width: 42rem;
+  .project-des-wp-dt p {
+    min-width: 28rem;
+    max-width: 28rem;
   }
 
   .services-card-wrapper {
@@ -846,16 +901,16 @@ nav.mobile-menu .menu-button-black {
     max-width: 1280px;
   }
 
+  .intro-container {
+    gap: 4rem;
+  }
+
   .carousel-cell {
     min-width: 64rem;
   }
 
   .mobile-menu-container {
     display: none;
-  }
-
-  .btn-secondary {
-    background-color: var(--color-secondary);
   }
 
   .services {
@@ -866,7 +921,11 @@ nav.mobile-menu .menu-button-black {
   .desktop-navbar {
     display: block;
     background-color: var(--color-primary);
-    background-image: -webkit-linear-gradient(-180deg, var(--color-primary) 65%, #fffae5 35%);
+    background-image: -webkit-linear-gradient(
+      -180deg,
+      var(--color-secondary) 65%,
+      var(--color-primary) 35%
+    );
   }
 
   .desktop-nav {
@@ -894,6 +953,11 @@ nav.mobile-menu .menu-button-black {
   }
 
   .quick-links:hover {
-    background-color: var(--color-neutral-muted);
+    background-color: var(--color-neutral);
+  }
+
+  .btn-secondary {
+    color: var(--color-accent);
+    background-color: var(--color-neutral);
   }
 }
