@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=EB+Garamond:wght@400;500&family=Nobile:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 *:root {
   --color-primary: #6ce5b1;
@@ -233,15 +233,11 @@ nav.mobile-menu .menu-button-black {
 
 /* header */
 .header {
-  background: var(--color-neutral);
+  background-color: var(--color-neutral);
 }
 
 .intro {
   background-color: var(--color-secondary);
-}
-
-.mac-img-wrapper {
-  display: none;
 }
 
 .intro-container {
@@ -250,34 +246,32 @@ nav.mobile-menu .menu-button-black {
 }
 
 .intro-text {
-  padding: 5rem 0;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
 }
 
 .intro-text h1 {
+  font-family: "Dancing Script", cursive;
   margin: 0;
   font-size: 1.875rem;
-  font-weight: 500;
-  font-family: "Dancing Script", cursive;
-  transform: rotate(-5deg);
-  transform-origin: bottom left;
-}
-
-.intro-text h3 {
-  font-size: 1.5rem;
   font-weight: 900;
-  font-family: "Dancing Script", cursive;
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 .intro-text p {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1.25rem;
-  line-height: 2rem;
-  font-weight: 600;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
   width: 100%;
-  text-align: center;
+}
+
+.intro-img-wrapper {
+  display: none;
+}
+
+.intro-img {
+  border-radius: 50%;
 }
 
 .btn-primary {
@@ -288,37 +282,20 @@ nav.mobile-menu .menu-button-black {
   padding: 0.75rem 2rem;
 }
 
-/* black lives matter banner */
-.banner {
-  background-color: black;
-  display: block;
-  margin: 0;
-  text-align: center;
+.btn-hire {
+  margin: 1rem auto;
+  font-size: 1.25rem;
+  color: var(--color-accent);
 }
 
-.banner-container {
+.social-follow {
+  margin: 1.5rem auto;
+}
+
+.flex {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 0.75rem;
-}
-
-.highlight {
-  text-decoration: none;
-  color: var(--color-primary);
-}
-
-.highlight:hover {
-  text-decoration: underline;
-}
-
-.banner-text {
-  color: var(--color-neutral);
-  font-weight: 600;
-}
-
-.hand-svg {
-  margin-left: 0.25rem;
+  gap: 1rem;
 }
 
 /* desktop navbar */
@@ -333,7 +310,7 @@ nav.mobile-menu .menu-button-black {
 
 .projects-container {
   text-align: center;
-  margin: 5rem auto 0 auto;
+  margin: 2.5rem auto 0 auto;
 }
 
 .main-carousel {
@@ -612,36 +589,18 @@ nav.mobile-menu .menu-button-black {
 
 /* footer */
 .footer {
-  background-color: var(--color-neutral);
+  text-align: center;
 }
 
-.footer-container {
-  padding-top: 2rem;
-}
-
-.footer-img-content {
-  margin-bottom: 0.5rem;
-  display: flex;
-}
-
-.footer-profile-img {
-  border-radius: 50%;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.footer-text-content {
-  display: grid;
-  grid-gap: 0.5rem;
-  gap: 0.5rem;
-}
-
-.footer-text-content p {
-  margin: 0;
+.footer-text-container {
+  border-top: var(--color-secondary) solid 2px;
 }
 
 .footer-text-wrapper {
-  display: grid;
-  grid-gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   margin-bottom: auto;
 }
@@ -654,7 +613,10 @@ nav.mobile-menu .menu-button-black {
 }
 
 .footer-text-content {
-  max-width: 28rem;
+  margin-top: 2rem;
+}
+
+.footer-text-content p {
   margin: 0;
 }
 
@@ -694,28 +656,11 @@ nav.mobile-menu .menu-button-black {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 320px) {
-  .intro-text p {
-    font-size: 1.875rem;
-    line-height: 2rem;
-  }
-}
-
 /* responsive for desktop layouts */
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
-  }
-
-  .intro-text p {
-    font-size: 3rem;
-    line-height: 3rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .banner-text {
-    font-size: 1rem;
   }
 
   .services-section-header-title {
@@ -888,48 +833,40 @@ nav.mobile-menu .menu-button-black {
   }
 
   .intro {
-    background-color: var(--color-primary);
-    background-image: -webkit-linear-gradient(
-      -180deg,
-      var(--color-secondary) 65%,
-      var(--color-primary) 35%
-    );
+    background-color: var(--color-neutral);
   }
 
   .intro-container {
     display: flex;
-    text-align: center;
-    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem 0;
+    text-align: left;
   }
 
-  .mac-img-wrapper {
+  .intro-img-wrapper {
     display: block;
-    margin-top: -5rem;
-  }
-
-  .mac-svg {
-    display: block;
-    height: 100vh;
   }
 
   .intro-text {
-    margin-top: 7.5%;
+    max-width: 683px;
   }
 
   .intro-text h1 {
     font-size: 2.25rem;
-    transform: rotate(-5deg);
-  }
-
-  .intro-text h3 {
-    font-size: 2rem;
   }
 
   .intro-text p {
-    font-size: 2.75rem;
-    line-height: 3.25rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .flex {
+    justify-content: left;
+    gap: 1.25rem;
   }
 
   .project-cell-wp-dt {
@@ -968,7 +905,7 @@ nav.mobile-menu .menu-button-black {
   }
 
   .intro-container {
-    gap: 4rem;
+    gap: 1rem;
   }
 
   .carousel-cell {
@@ -986,30 +923,30 @@ nav.mobile-menu .menu-button-black {
   /* desktop navbar */
   .desktop-navbar {
     display: block;
-    background-color: var(--color-primary);
-    background-image: -webkit-linear-gradient(
-      -180deg,
-      var(--color-secondary) 65%,
-      var(--color-primary) 35%
-    );
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 
-  .desktop-nav {
+  .nav {
     display: flex;
     justify-content: space-between;
   }
 
-  .desktop-credential-text {
-    font-weight: 600;
-    font-family: "Dancing Script", cursive;
-    font-size: 2rem;
+  .nav-title {
+    margin: 0.5rem 0;
     position: relative;
     top: 0.5rem;
-    display: inline-block;
-    cursor: pointer;
   }
 
-  .quick-links {
+  .nav-brand {
+    color: var(--color-inverted);
+    text-decoration: none;
+    font-family: "Dancing Script", cursive;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .nav-links a {
     text-decoration: none;
     color: var(--color-inverted);
     padding: 0.75rem 1.5rem;
@@ -1018,12 +955,11 @@ nav.mobile-menu .menu-button-black {
     font-weight: 600;
   }
 
-  .quick-links:hover {
-    background-color: var(--color-neutral);
+  .nav-links a:hover {
+    background-color: var(--color-neutral-muted);
   }
 
   .btn-secondary {
-    color: var(--color-accent);
-    background-color: var(--color-neutral);
+    background-color: var(--color-neutral-muted);
   }
 }
