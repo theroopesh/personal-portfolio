@@ -6,8 +6,7 @@
     <title>Roopesh Saravanan - Frond End Web Developer</title>
     <meta
       name="description"
-      content="I create beautiful websites your users will love! I work with you from start
-to finish to make sure your goals are reached and your users are happy."
+      content="I create beautiful websites your users will love! I work with you from start to finish to make sure your goals are reached and your users are happy."
     />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
@@ -34,8 +33,18 @@ to finish to make sure your goals are reached and your users are happy."
       </div>
     </header>
     <main>
-      <section class="section-1 intro">
-        <div class="intro-container container">
+      <nav class="mobile-nav-brand">
+        <a href="#" class="intro-brand">Roopesh Saravanan</a>
+      </nav>
+      <section class="section-1 intro container">
+        <div class="intro-container">
+          <div class="intro-img-ct">
+            <picture>
+              <source type="image/webp" srcset="img/intro-img.webp" />
+              <source type="image/png" srcset="img/intro-img.png" />
+              <img src="img/intro-img.png" loading="lazy" alt="intro-img" />
+            </picture>
+          </div>
           <div class="intro-text">
             <h1><span>👋</span> Hi, I'm Roopesh!</h1>
             <p>
@@ -47,25 +56,30 @@ to finish to make sure your goals are reached and your users are happy."
             <div class="social-follow">
               <div class="flex">
                 <a href="https://twitter.com/roopeshofficial" target="_blank" title="Twitter">
-                  <img src="svg/twitter.svg" height="30" width="30" alt="twitter" />
+                  <img src="svg/twitter.svg" height="25" width="25" alt="twitter" />
                 </a>
                 <a href="https://linkedin.com/in/theroopesh" target="_blank" title="LinkedIn">
-                  <img src="svg/linkedin.svg" height="30" width="30" alt="linkedin" />
+                  <img src="svg/linkedin.svg" height="25" width="25" alt="linkedin" />
                 </a>
                 <a href="https://instagram.com/roopeshofficial" target="_blank" title="Instagram">
-                  <img src="svg/instagram-logo.svg" height="30" width="30" alt="instagram" />
+                  <img src="svg/instagram-logo.svg" height="25" width="25" alt="instagram" />
                 </a>
                 <a href="https://dribbble.com/theroopesh" target="_blank" title="Dribble">
-                  <img src="svg/dribble.svg" height="30" width="30" alt="dribble" />
+                  <img src="svg/dribble.svg" height="25" width="25" alt="dribble" />
                 </a>
                 <a href="https://github.com/theroopesh" target="_blank" title="GitHub">
-                  <img src="svg/github.svg" height="30" width="30" alt="github" />
+                  <img src="svg/github.svg" height="25" width="25" alt="github" />
                 </a>
               </div>
             </div>
           </div>
           <div class="intro-img-wrapper">
-            <img class="intro-img responsive" src="img/intro-img.png" alt="intro-img" />
+            <img
+              class="intro-img responsive"
+              src="img/intro-img.png"
+              loading="lazy"
+              alt="intro-img"
+            />
           </div>
         </div>
       </section>
@@ -403,9 +417,6 @@ to finish to make sure your goals are reached and your users are happy."
         </button>
       </nav>
       <div class="circle"></div>
-    </div>
-    <div class="loader-wrapper">
-      <span class="loader"><span class="loader-inner"></span></span>
     </div>
     <footer class="footer container">
       <div class="footer-text-container">
