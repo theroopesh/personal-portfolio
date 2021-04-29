@@ -8,246 +8,136 @@
       name="description"
       content="I create beautiful websites your users will love! I work with you from start to finish to make sure your goals are reached and your users are happy."
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="stylesheet" href="flickity/flickity.min.css" media="screen" />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="flickity/flickity.min.js"></script>
     <script src="js/script.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <div class="desktop-navbar container">
-        <nav class="nav">
-          <div class="nav-title"><a href="index.html" class="nav-brand">Roopesh Saravanan</a></div>
+      <div class="banner">
+        <div class="banner-container">
+          <p class="banner-text">
+            <a class="highlight" href="https://en.wikipedia.org/wiki/Black_Lives_Matter"
+              >Black Lives Matter
+            </a>
+            - Help end systemic racism
+          </p>
+          <img class="hand-svg" src="svg/hand.svg" height="30" width="30" alt="hand" />
+        </div>
+      </div>
+      <div class="desktop-navbar">
+        <nav class="nav container">
+          <a href="index.html" class="nav-brand">
+            <img src="img/profile-pic.jpg" height="50" width="50" alt="profile pic" />
+            <span>Roopesh Saravanan</span>
+          </a>
           <div class="nav-links">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Services</a>
+            <a class="nav-link" href="#section-2">Projects</a>
+            <a class="nav-link" href="#section-3">Services</a>
+            <a class="nav-link" href="#section-4">About</a>
             <a href="#">Blog</a>
-            <a class="btn btn-secondary" href="contact.html">Hire me today</a>
+            <a class="nav-link btn btn-secondary" href="#section-5">Hire me today</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
-      <nav class="mobile-nav-brand">
-        <a href="#" class="intro-brand">Roopesh Saravanan</a>
-      </nav>
-      <section class="section-1 intro container">
+      <section id="section-1" class="intro-section container">
         <div class="intro-container">
-          <div class="intro-img-ct">
-            <picture>
-              <source type="image/webp" srcset="img/intro-img.webp" />
-              <source type="image/png" srcset="img/intro-img.png" />
-              <img src="img/intro-img.png" loading="lazy" alt="intro-img" />
-            </picture>
-          </div>
-          <div class="intro-text">
-            <h1><span>👋</span> Hi, I'm Roopesh!</h1>
-            <p>
-              I'm a Front End Web Developer who is addicted to learning and loves working with
-              people. I create beautiful websites your users will love! I work with you from start
-              to finish to make sure your goals are reached and your users are happy.
-            </p>
-            <a href="contact.html" class="btn-hire">Currently available for hire</a>
-            <div class="social-follow">
-              <div class="flex">
-                <a href="https://twitter.com/roopeshofficial" target="_blank" title="Twitter">
-                  <img src="svg/twitter.svg" height="25" width="25" alt="twitter" />
-                </a>
-                <a href="https://linkedin.com/in/theroopesh" target="_blank" title="LinkedIn">
-                  <img src="svg/linkedin.svg" height="25" width="25" alt="linkedin" />
-                </a>
-                <a href="https://instagram.com/roopeshofficial" target="_blank" title="Instagram">
-                  <img src="svg/instagram-logo.svg" height="25" width="25" alt="instagram" />
-                </a>
-                <a href="https://dribbble.com/theroopesh" target="_blank" title="Dribble">
-                  <img src="svg/dribble.svg" height="25" width="25" alt="dribble" />
-                </a>
-                <a href="https://github.com/theroopesh" target="_blank" title="GitHub">
-                  <img src="svg/github.svg" height="25" width="25" alt="github" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="intro-img-wrapper">
-            <img
-              class="intro-img responsive"
-              src="img/intro-img.png"
-              loading="lazy"
-              alt="intro-img"
-            />
-          </div>
+          <p>from design to development 🚀</p>
+          <h1>I create beautiful websites your uses will love</h1>
+          <a class="btn btn-primary" href="#section-5">Make it happen</a>
         </div>
       </section>
 
-      <section class="section-2 projects container">
-        <div class="projects-container">
-          <div class="projects-header">
-            <h1 class="projects-title">Projects, I have done📌</h1>
-          </div>
-          <div
-            class="main-carousel"
-            data-flickity='{ "freeScroll": true, "prevNextButtons": false, "autoPlay": true }'
-          >
-            <div class="carousel-cell">
-              <div class="cell-wrapper project-1">
-                <div class="project-img-container">
-                  <div class="project-img-wrapper project-img-1">
-                    <img
-                      class="project-img responsive"
-                      src="img/to-do-list-1.png"
-                      alt="todo-list-banner"
-                    />
-                  </div>
-                </div>
-                <div class="project-des-container">
-                  <div class="project-des-wrapper">
-                    <p class="project-des-title">Your Todo list</p>
-                    <p class="project-des-text">
-                      A Todo list application where you can save all you todos.
-                    </p>
-                    <a
-                      class="btn btn-project"
-                      target="_blank"
-                      href="https://github.com/theroopesh/your-todo-list"
-                      >View on GitHub</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-cell">
-              <div class="cell-wrapper project-2">
-                <div class="project-img-container flex-order">
-                  <div class="project-img-wrapper project-img-2">
-                    <img
-                      class="project-img responsive"
-                      src="img/shoppingcart-img.png"
-                      alt="shopping-cart-banner"
-                    />
-                  </div>
-                </div>
-                <div class="project-des-container">
-                  <div class="project-des-wrapper">
-                    <p class="project-des-title">Shopping Cart</p>
-                    <p class="project-des-text">
-                      A real-time shopping cart, where you can add or remove items from the online
-                      store.
-                    </p>
-                    <a
-                      class="btn btn-project"
-                      target="_blank"
-                      href="https://github.com/theroopesh/shopping-cart"
-                      >View on GitHub</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="projects-button">
-            <a class="other-projects-button" href="#" title="other projects">
-              See my other projects
-              <img
-                class="right-arrow"
-                src="svg/right-arrow.svg"
-                height="15"
-                width="15"
-                alt="right-arrow"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-6 projects-dt container">
-        <div class="projects-ct-dt">
-          <div class="projects-header">
-            <h1>Projects, I have done 📌</h1>
-          </div>
-          <div class="projects-carousel-dt">
-            <div class="project-cell-dt">
-              <div class="project-cell-wp-dt project-1">
-                <div class="project-img-container">
-                  <div class="project-img-wrapper-dt project-img-1">
-                    <img
-                      class="project-img-dt responsive"
-                      src="img/to-do-list-1-org.png"
-                      height="300"
-                      width="300"
-                      alt="todo-list-banner"
-                    />
-                  </div>
-                </div>
-                <div class="project-des-cr-dt">
-                  <div class="project-des-wp-dt">
-                    <h2>Your Todo list</h2>
+      <section id="section-2" class="work-section">
+        <div class="work-section-container container">
+          <h1 class="work-section-title">Some of my work</h1>
+          <div class="work-grid">
+            <div class="work-grid-container">
+              <div class="flip work work-1">
+                <img src="img/board.png" class="work-img responsive" />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>Trello Clone</h2>
                     <p>A Todo list application where you can save all you todos.</p>
-                    <a
-                      class="btn btn-project"
-                      target="_blank"
-                      href="https://github.com/theroopesh/your-todo-list"
-                      >View on GitHub</a
-                    >
+                    <a href="#" target="_blank">View on GitHub</a>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="project-cell-dt">
-              <div class="project-cell-wp-dt project-2">
-                <div class="project-img-cr-dt flex-order">
-                  <div class="project-img-wp-dt project-img-1">
-                    <img
-                      class="project-img-dt responsive"
-                      src="img/shoppingcart-img-org.jpg"
-                      height="300"
-                      width="300"
-                      alt="shopping-cart-banner"
-                    />
+              <div class="flip work work-2">
+                <img src="img/board.png" class="work-img responsive" />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>Trello Clone</h2>
+                    <p>A Todo list application where you can save all you todos.</p>
+                    <a href="#" target="_blank">View on GitHub</a>
                   </div>
                 </div>
-                <div class="project-des-cr-dt">
-                  <div class="project-des-wp-dt">
-                    <h2>Shopping Cart</h2>
-                    <p>
-                      A real-time shopping cart, where you can add or remove items from the online
-                      store.
-                    </p>
-                    <a
-                      class="btn btn-project"
-                      target="_blank"
-                      href="https://github.com/theroopesh/shopping-cart"
-                      >View on GitHub</a
-                    >
+              </div>
+              <div class="flip work work-3">
+                <img src="img/board.png" class="work-img responsive" />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>Trello Clone</h2>
+                    <p>A Todo list application where you can save all you todos.</p>
+                    <a href="#" target="_blank">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip work work-4">
+                <img src="img/board.png" class="work-img responsive" />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>Trello Clone</h2>
+                    <p>A Todo list application where you can save all you todos.</p>
+                    <a href="#" target="_blank">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip work work-5">
+                <img src="img/board.png" class="work-img responsive" />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>Trello Clone</h2>
+                    <p>A Todo list application where you can save all you todos.</p>
+                    <a href="#" target="_blank">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+              <div class="flip work work-6">
+                <img src="img/board.png" class="work-img responsive" />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>Trello Clone</h2>
+                    <p>A Todo list application where you can save all you todos.</p>
+                    <a href="#" target="_blank">View on GitHub</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="projects-button">
-            <a class="other-projects-button" href="#" title="other projects">
-              See my other projects
-              <img
-                class="right-arrow"
-                src="svg/right-arrow.svg"
-                height="15"
-                width="15"
-                alt="right-arrow"
-              />
-            </a>
+          <div>
+            <div class="work-end">
+              <a class="view-more-button" href="#">
+                View more on GitHub
+                <img
+                  class="right-arrow"
+                  src="svg/right-arrow.svg"
+                  height="15"
+                  width="15"
+                  alt="right-arrow"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section-3 services container">
-        <div class="services-section-header">
-          <h1 class="services-section-header-title">Everything you need for a perfect website</h1>
+      <section id="section-3" class="services-section container">
+        <div class="services-container">
+          <div class="services-section-header">
+            <h1 class="services-section-header-title">Everything you need for a perfect website</h1>
+          </div>
           <div class="services-card-wrapper">
             <div class="services-card-each">
               <div class="services-card-svg-wrapper">
@@ -353,7 +243,7 @@
         </div>
       </section>
 
-      <section class="section-4 dev-intro container">
+      <section id="section-4" class="dev-intro-section container">
         <div class="dev-intro-wrap">
           <div class="dev-intro-content">
             <div class="dev-intro-img-wrap">
@@ -370,14 +260,75 @@
                     finish to make sure your goals are reached and your users are happy.
                   </p>
                 </div>
-                <a class="btn btn-inverted" href="contact.html">Let's book a call</a>
+                <a class="btn btn-inverted" id="btn-secondary" href="#section-5"
+                  >Let's book a call</a
+                >
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section-5 know-more container">
+      <section id="section-5" class="contact-form-section">
+        <div class="contact-form-container">
+          <div class="contact-form-title container">
+            <h1>Let's start making your perfect website</h1>
+          </div>
+          <div class="contact-form">
+            <div class="contact-form-description container">
+              <p>
+                I’m able to create a website which perfectly suits your needs, ensuring that it will
+                engage your customers while making your job easier.
+              </p>
+              <p>
+                Just fill this form, and we'll set up a meeting to help you improve your business
+              </p>
+            </div>
+            <div class="form-container">
+              <div class="form-wrapper">
+                <form
+                  class="form container"
+                  id="form"
+                  method="POST"
+                  action="https://formsubmit.co/helloiamroopesh@gmail.com"
+                  enctype="multipart/form-data"
+                >
+                  <div class="form-control">
+                    <label for="name">Name <span>*</span></label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-control">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div class="form-control">
+                    <label for="message">Message <span>*</span></label>
+                    <textarea
+                      name="message"
+                      id="message"
+                      placeholder="Type your message here"
+                      required
+                      spellcheck="false"
+                    ></textarea>
+                  </div>
+                  <button class="btn btn-submit" type="submit">
+                    Send
+                    <span><img src="svg/hire.svg" height="20" width="20" alt="send-svg" /></span>
+                  </button>
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://theroopesh.netlify.app/thanks.html"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-6" class="know-more-section container">
         <div class="know-more-cont">
           <div class="know-more-wrap">
             <div class="know-more-img-cont">
@@ -393,24 +344,25 @@
                   to help you meet your goals.
                 </p>
               </div>
-              <a class="btn btn-inverted" href="contact.html">Make it happen</a>
+              <a class="btn btn-inverted btn-tertiary" href="#section-5">Make it happen</a>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <div class="mobile-menu-container">
       <nav class="mobile-menu">
-        <ul>
-          <li><a href="#">About</a></li>
+        <ul class="nav-links-mobile">
+          <li><a class="nav-link" href="#section-4">About</a></li>
           <li>
-            <a href="#">Projects</a>
+            <a class="nav-link" href="#section-2">Projects</a>
           </li>
           <li>
-            <a href="#">Services</a>
+            <a class="nav-link" href="#section-3">Services</a>
           </li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="contact.html">Hire me</a></li>
+          <li><a>Blog</a></li>
+          <li><a class="nav-link" href="#section-5">Hire me</a></li>
         </ul>
         <button class="menu-button-black">
           <span class="line line-top"></span><span class="line line-bottom"></span>
@@ -418,11 +370,12 @@
       </nav>
       <div class="circle"></div>
     </div>
+
     <footer class="footer container">
       <div class="footer-text-container">
         <div class="footer-text-wrapper">
           <div class="footer-text-content">
-            <p><a class="btn-hire" href="contact.html">Currently available for hire</a></p>
+            <p><a class="btn-hire" href="#section-5">Currently available for hire</a></p>
           </div>
           <div class="social-media-container">
             <div class="social-media-wrapper">
