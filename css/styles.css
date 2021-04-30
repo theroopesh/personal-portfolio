@@ -75,6 +75,35 @@ ul {
   letter-spacing: 0.025em;
 }
 
+.btn-muted {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.4s ease-out;
+  display: inline-block;
+  margin: 1rem auto;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-inverted);
+  cursor: pointer;
+}
+
+.underline-effect:hover::after {
+  border-color: var(--color-primary);
+  top: 1.75rem;
+  right: 0;
+}
+
+.underline-effect::after {
+  border-top: 0.25rem solid var(--color-primary);
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 1.75rem;
+  bottom: 0;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1), border-color 0.4s ease-out;
+}
+
 .btn:hover {
   transform: translate(0, -5px);
   transition: 0.2s ease-in-out;
@@ -94,7 +123,7 @@ p {
   transform: translateY(8rem);
 }
 
-/* black lives matter banner */
+/* COVID-19 banner */
 .banner {
   background-color: black;
   display: block;
@@ -109,15 +138,6 @@ p {
   font-size: 0.75rem;
 }
 
-.highlight {
-  text-decoration: none;
-  color: var(--color-primary);
-}
-
-.highlight:hover {
-  text-decoration: underline;
-}
-
 .banner-text {
   color: var(--color-neutral);
   font-weight: 600;
@@ -125,8 +145,14 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.hand-svg {
-  margin-left: 0.25rem;
+.banner-container a {
+  cursor: pointer;
+  color: var(--color-primary);
+  margin-left: 0.5rem;
+}
+
+.banner-container a:hover {
+  text-decoration: underline;
 }
 
 /* mobile navbar */
@@ -258,10 +284,9 @@ nav.mobile-menu .menu-button-black {
   max-width: 65ch;
   -webkit-font-smoothing: antialiased;
   margin: 1rem auto;
-  font-family: "Dancing Script", cursive;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .intro-container h1 {
@@ -269,6 +294,7 @@ nav.mobile-menu .menu-button-black {
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 600;
+  color: var(--color-inverted);
 }
 
 .btn-primary {
@@ -373,34 +399,20 @@ nav.mobile-menu .menu-button-black {
   padding: 0.5rem 1rem;
 }
 
-.view-more-button {
-  display: inline-block;
-  margin: 1rem auto;
-  text-decoration: none;
-  font-weight: 600;
-  color: var(--color-inverted);
-  cursor: pointer;
-}
-
 .right-arrow {
   position: relative;
   top: 0.2rem;
 }
 
 /* services offered section */
-.services {
-  display: block;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
 
 .services-container {
-  margin: 5rem auto 2.5rem auto;
+  margin: 2rem auto 4rem auto;
   text-align: center;
 }
 
 .services-section-header {
-  margin: 5rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   text-align: center;
 }
 
@@ -459,6 +471,19 @@ nav.mobile-menu .menu-button-black {
   margin-bottom: 1rem;
 }
 
+.services-end {
+  font-size: 1rem;
+  margin: 2rem auto 1rem auto;
+}
+
+.services-end-highlight {
+  color: var(--color-code-2);
+}
+
+.services-end-highlight:hover {
+  text-decoration: underline;
+}
+
 .findout-more-button {
   display: inline-block;
   margin: 1rem auto;
@@ -513,10 +538,20 @@ nav.mobile-menu .menu-button-black {
   line-height: 2.25rem;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.875rem;
 }
 
 .dev-intro-des-text-wrap {
+  margin-bottom: 1rem;
+}
+
+.dev-first-child {
+  font-size: 1.25rem;
+  margin-bottom: 0.875rem;
+  font-weight: 600;
+}
+
+.dev-second-child {
   margin-bottom: 1rem;
 }
 
@@ -710,10 +745,16 @@ form {
 }
 
 .footer-text-content p a {
-  color: var(--color-accent);
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 0.2s;
+  color: var(--color-code-2);
+  font-size: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.4s ease-out;
+}
+
+.footer-text-content p a span {
+  position: relative;
+  top: 0.5rem;
 }
 
 .social-media-container {
@@ -752,17 +793,13 @@ form {
     max-width: 640px;
   }
 
-  .banner-text {
+  .banner-container {
     font-size: 1rem;
   }
 
   .intro-container h1 {
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .intro-container p {
-    font-size: 2.25rem;
   }
 
   .work-grid {
@@ -804,6 +841,7 @@ form {
 
   .services-container {
     margin: 2rem auto;
+    padding-top: 2rem;
   }
 
   .services-card-wrapper {
@@ -842,7 +880,7 @@ form {
   .dev-intro-name {
     font-size: 3rem;
     line-height: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   /* know more section */
@@ -885,6 +923,11 @@ form {
 
   .contact-form-title h1 {
     font-size: 3rem;
+  }
+
+  .services-end {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -978,8 +1021,9 @@ form {
 
   .nav-brand span {
     color: var(--color-inverted);
-    font-family: "Dancing Script", cursive;
-    font-size: 1.5rem;
+    font-family: inherit;
+    /* font-family: "Dancing Script", sans-serif; */
+    font-size: 1rem;
     font-weight: 600;
     position: relative;
     top: -0.8rem;
@@ -992,6 +1036,7 @@ form {
     padding: 0.75rem 1.5rem;
     margin-right: 0.5rem;
     border-radius: 0.75rem;
+    font-size: 1rem;
     font-weight: 600;
   }
 
