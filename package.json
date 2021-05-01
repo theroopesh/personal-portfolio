@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/theroopesh/personal-portfolio#readme",
   "devDependencies": {
+    "netlify-plugin-submit-sitemap": "^0.2.3",
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {}
