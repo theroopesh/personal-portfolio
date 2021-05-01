@@ -1,7 +1,7 @@
 {
   "name": "personal-portfolio",
   "version": "1.0.0",
-  "description": "This is my personal porfolio.\r Note: This site is in development!",
+  "description": "This is my personal porfolio.",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html thanks.html",
