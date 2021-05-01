@@ -33,7 +33,21 @@
       <div class="desktop-navbar">
         <nav class="nav container">
           <div class="nav-brand">
-            <img src="img/profile-pic.jpg" height="50" width="50" alt="profile pic" />
+            <picture>
+              <source height="50" width="50" type="image/webp " srcset="img/dev-nav-img.webp" />
+              <source
+                height="50"
+                width="50"
+                type="image/jpeg responsive"
+                srcset="img/dev-nav-img.jpg"
+              />
+              <img
+                height="50"
+                width="50"
+                src="img/dev-nav-img.jpg "
+                alt="Roopesh Saravanan Image"
+              />
+            </picture>
             <span>Roopesh Saravanan</span>
           </div>
           <div class="nav-links">
@@ -57,70 +71,119 @@
       <section id="section-2" class="work-section">
         <div class="work-section-container container">
           <h1 class="work-section-title">Some of my work</h1>
-          <div class="work-grid">
-            <div class="work-grid-container">
-              <div class="flip work work-1">
-                <img src="img/board.png" class="work-img responsive" alt="Trello clone" />
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Trello Clone</h2>
-                    <p>A Todo list application where you can save all you todos.</p>
-                    <a rel="noopener" href="#" target="_blank">View on GitHub</a>
-                  </div>
-                </div>
+          <div class="card-container">
+            <div class="card-1 card">
+              <div class="card-content">
+                <h2 class="card-title">Trello Clone</h2>
+                <p class="card-body">
+                  The innovative functionality in trello is that the drag and drop feature. So, I
+                  have clone that.
+                </p>
+                <a
+                  href="https://github.com/theroopesh/trello-clone"
+                  class="card-button"
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <span><img src="svg/github.svg" height="20" width="20" alt="GitHub Icon" /></span>
+                  View on GitHub</a
+                >
               </div>
-              <div class="flip work work-2">
-                <img src="img/board.png" class="work-img responsive" alt="Trello clone" />
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Shopping Cart</h2>
-                    <p>
-                      A real-time shopping cart, where you can add or remove items from the online
-                      store.
-                    </p>
-                    <a rel="noopener" href="#" target="_blank">View on GitHub</a>
-                  </div>
-                </div>
+            </div>
+
+            <div class="card-2 card">
+              <div class="card-content">
+                <h2 class="card-title">Shopping Cart</h2>
+                <p class="card-body">
+                  A real-time shopping cart, where you can add or remove items from the online
+                  store.
+                </p>
+                <a
+                  href="https://github.com/theroopesh/shopping-cart"
+                  class="card-button"
+                  rel="noopener"
+                  target="_blank"
+                  ><span
+                    ><img src="svg/github.svg" height="20" width="20" alt="GitHub Icon"
+                  /></span>
+                  View on GitHub</a
+                >
               </div>
-              <div class="flip work work-3">
-                <img src="img/board.png" class="work-img responsive" alt="Trello clone" />
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Trello Clone</h2>
-                    <p>A Todo list application where you can save all you todos.</p>
-                    <a rel="noopener" href="#" target="_blank">View on GitHub</a>
-                  </div>
-                </div>
+            </div>
+
+            <div class="card-3 card">
+              <div class="card-content">
+                <h2 class="card-title">Personal Portfolio</h2>
+                <p class="card-body">
+                  You're viewing my personal porfolio on the web. Why not consider this as a
+                  project?
+                </p>
+                <a
+                  href="https://github.com/theroopesh/personal-portfolio"
+                  class="card-button"
+                  rel="noopener"
+                  target="_blank"
+                  ><span
+                    ><img src="svg/github.svg" height="20" width="20" alt="GitHub Icon"
+                  /></span>
+                  View on GitHub</a
+                >
               </div>
-              <div class="flip work work-4">
-                <img src="img/board.png" class="work-img responsive" alt="Trello clone" />
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Trello Clone</h2>
-                    <p>A Todo list application where you can save all you todos.</p>
-                    <a rel="noopener" href="#" target="_blank">View on GitHub</a>
-                  </div>
-                </div>
+            </div>
+
+            <div class="card-4 card">
+              <div class="card-content">
+                <h2 class="card-title">Pictionary Clone</h2>
+                <p class="card-body">
+                  Here, you can connect to some random strangers and play pictionary game with them.
+                </p>
+                <a
+                  href="https://github.com/theroopesh/pictionary-clone"
+                  class="card-button"
+                  rel="noopener"
+                  target="_blank"
+                  ><span
+                    ><img src="svg/github.svg" height="20" width="20" alt="GitHub Icon"
+                  /></span>
+                  View on GitHub</a
+                >
               </div>
-              <div class="flip work work-5">
-                <img src="img/board.png" class="work-img responsive" alt="Trello clone" />
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Trello Clone</h2>
-                    <p>A Todo list application where you can save all you todos.</p>
-                    <a rel="noopener" href="#" target="_blank">View on GitHub</a>
-                  </div>
-                </div>
+            </div>
+
+            <div class="card-5 card">
+              <div class="card-content">
+                <h2 class="card-title">Your Todo List</h2>
+                <p class="card-body">A Todo list, where you can store all your future tasks.</p>
+                <a
+                  href="https://github.com/theroopesh/your-todo-list"
+                  class="card-button"
+                  rel="noopener"
+                  target="_blank"
+                  ><span
+                    ><img src="svg/github.svg" height="20" width="20" alt="GitHub Icon"
+                  /></span>
+                  View on GitHub</a
+                >
               </div>
-              <div class="flip work work-6">
-                <img src="img/board.png" class="work-img responsive" alt="Trello clone" />
-                <div class="overlay">
-                  <div class="text">
-                    <h2>Trello Clone</h2>
-                    <p>A Todo list application where you can save all you todos.</p>
-                    <a rel="noopener" href="#" target="_blank">View on GitHub</a>
-                  </div>
-                </div>
+            </div>
+
+            <div class="card-6 card">
+              <div class="card-content">
+                <h2 class="card-title">Shopping Cart</h2>
+                <p class="card-body">
+                  A real-time shopping cart, where you can add or remove items from the online
+                  store.
+                </p>
+                <a
+                  href="https://github.com/theroopesh/shopping-cart"
+                  class="card-button"
+                  rel="noopener"
+                  target="_blank"
+                  ><span
+                    ><img src="svg/github.svg" height="20" width="20" alt="GitHub Icon"
+                  /></span>
+                  View on GitHub</a
+                >
               </div>
             </div>
           </div>
@@ -265,9 +328,23 @@
         <div class="dev-intro-wrap">
           <div class="dev-intro-content">
             <div class="dev-intro-img-wrap">
-              <div class="dev-intro-img">
-                <img class="dev-img responsive" src="img/profile-pic-rs.jpg" alt="profile-pic" />
-              </div>
+              <picture class="dev-intro-img">
+                <source
+                  class="dev-img responsive"
+                  type="image/webp"
+                  srcset="img/dev-intro-raw.webp"
+                />
+                <source
+                  class="dev-img responsive"
+                  type="image/jpeg"
+                  srcset="img/dev-intro-raw.jpg"
+                />
+                <img
+                  class="dev-img responsive"
+                  src="img/dev-intro-raw.jpg"
+                  alt="Roopesh Saravanan Image"
+                />
+              </picture>
             </div>
             <div class="dev-intro-des-wrap">
               <div class="dev-intro-des">
@@ -354,7 +431,11 @@
           <div class="know-more-wrap">
             <div class="know-more-img-cont">
               <div class="know-more-img-wrap">
-                <img class="know-more-img responsive" src="svg/example-29.svg" alt="profile-pic" />
+                <img
+                  class="know-more-img responsive"
+                  src="svg/know-more-svg.svg"
+                  alt="Know more svg"
+                />
               </div>
             </div>
             <div class="know-more-des-cont">
