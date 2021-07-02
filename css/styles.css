@@ -302,182 +302,79 @@ nav.mobile-menu .menu-button-black {
 }
 
 /* desktop navbar */
+
 .desktop-navbar {
   display: none;
 }
 
-/* Work section */
-.work-section-title {
+/* Projects section */
+
+.projects-section {
+  margin-bottom: 4rem;
+}
+
+.projects-header {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.projects-header h1 {
   font-size: 1.875rem;
-  font-weight: 600;
-  line-height: 2.25rem;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.work-end {
-  text-align: center;
-  margin: 2rem auto 1rem auto;
-}
-
-.card-container {
-  display: grid;
-  grid-template-columns: 300px;
-  place-items: center;
-  place-content: center;
-  line-height: 1.6;
-  font-family: sans-serif;
-  grid-gap: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-.card-1 {
-  background: url(../img/trello-clone-customized.jpg);
-  background-size: cover;
-  height: auto;
-  width: 100%;
-}
-
-.card-2 {
-  background: url(../img/shopping-cart.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  background-position: center;
-}
-
-.card-3 {
-  background: url(../img/personal-portfolio.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  background-position: center;
-}
-
-.card-4 {
-  background: url(../img/pictionary-clone.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  background-position: center;
-}
-
-.card-5 {
-  background: url(../img/your-todo-list.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  background-position: center;
-}
-
-.card-6 {
-  background: url(../img/shopping-cart.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  background-position: center;
-}
-
-.card {
-  padding: 10rem 0 0;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  transition: transform 500ms ease;
-  border: 4px solid var(--color-secondary);
-}
-
-.card:hover,
-.card:focus-within {
-  transform: scale(1.05);
-}
-
-.card-content {
-  position: relative;
-  left: 0;
-  right: 0;
-  --padding: 1.5rem;
-  padding: var(--padding);
-  background: hsl(20 20% 0% / 0.6);
-  color: var(--color-neutral);
-  /* background: linear-gradient(hs1(0 0% 0% / 0), hs1(20 0% 0% / 0.3) 20%, hs1(0 0% 0% / 1)); */
-}
-
-.card-title {
-  position: relative;
-  width: max-content;
-  max-width: 100%;
-  font-size: 1.25rem;
-}
-
-.card-title::after {
-  content: "";
-  position: absolute;
-  left: calc(var(--padding) * -1);
-  bottom: 0;
-  height: 4px;
-  width: calc(100% + var(--padding));
-  background: var(--color-primary);
-  transition: transform 500ms ease;
-  transform-origin: left;
-}
-
-.card-body {
-  margin-top: 0.5rem;
-}
-
-@media (hover) {
-  .card-content {
-    transform: translateY(60%);
-    transition: transform 500ms ease;
-  }
-
-  .card:hover .card-content,
-  .card:focus-within .card-content {
-    transform: translateY(0);
-    transition-delay: 500ms;
-  }
-
-  .card:focus-within .card-content {
-    transition-duration: 0ms;
-  }
-
-  .card-content > *:not(.card-title) {
-    opacity: 0;
-    transition: opacity 500ms linear;
-  }
-
-  .card:hover .card-content > *:not(.card-title),
-  .card:focus-within .card-content > *:not(.card-title) {
-    opacity: 1;
-    transition-delay: 1000ms;
-  }
-
-  .card-title::after {
-    transform: scaleX(0);
-  }
-}
-
-.card:hover .card-title::after,
-.card:focus-within .card-title::after {
-  transform: scaleX(1);
-}
-
-.card-button {
-  font-size: 1rem;
+  line-height: 2rem;
   font-weight: 500;
-  cursor: pointer;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--color-inverted);
-  background: var(--color-neutral);
-  padding: 0.25rem 0.75rem;
-  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.card-button span {
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.project-img-wrapper {
   position: relative;
-  top: 3px;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  --tw-border-opacity: 1;
+  border-color: rgba(243, 238, 234, var(--tw-border-opacity));
+  border-style: dashed;
+}
+
+.project h2 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.project a {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -895,24 +792,23 @@ form {
     line-height: 1;
   }
 
-  .work-grid {
-    margin-bottom: 2rem;
-  }
+  /* Projects section */
 
-  .work-grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  }
-
-  .work-section-title {
+  .projects-header h1 {
     font-size: 3rem;
     line-height: 3.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
+  .projects-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Services section */
   .services-section-header-title {
     font-size: 3rem;
     line-height: 3.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 
   .contact-form-title h1 {
@@ -1044,6 +940,19 @@ form {
     grid-template-rows: 1fr;
   }
 
+  /* Projects section */
+  .projects-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .project h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .project p {
+    margin-bottom: 0.5rem;
+  }
+
   .services-card-wrapper {
     justify-content: center;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1129,12 +1038,21 @@ form {
   .nav-brand span {
     color: var(--color-inverted);
     font-family: inherit;
-    /* font-family: "Dancing Script", sans-serif; */
     font-size: 1rem;
     font-weight: 600;
+  }
+
+  .first-name {
     position: relative;
-    top: -0.8rem;
+    top: -1.6rem;
     margin-left: 0.75rem;
+  }
+
+  .last-name {
+    display: block;
+    position: relative;
+    left: 4.1rem;
+    bottom: 1.7rem;
   }
 
   .nav-links a {
